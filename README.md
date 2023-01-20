@@ -7,7 +7,7 @@ a single N2O molecule in gas phase.
 
 ## Requirements
 
-- CHARMM c47a2 or higher with compiled usersb.F90 file in the 'charmm' directory
+- CHARMM c47a2 or higher with compiled usersb.F90 file from the 'charmm' directory
 - packmol
 - python 3.8 or higher 
 - MDAnalysis
