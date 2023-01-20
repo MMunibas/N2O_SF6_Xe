@@ -1,0 +1,43 @@
+PSF EXT CMAP CHEQ XPLOR
+
+         2 !NTITLE
+* PREPARE SOLUTE                                                                
+*  DATE:     8/31/21     12:19:19      CREATED BY USER: meuwly                  
+
+         3 !NATOM
+         1 N2O      1        N2O      N1       N=      -0.877600E-01   14.0067           0   0.00000     -0.301140E-02
+         2 N2O      1        N2O      N2       =N=      0.507570       14.0067           0   0.00000     -0.301140E-02
+         3 N2O      1        N2O      O3       O=      -0.419810       15.9994           0   0.00000     -0.301140E-02
+
+         2 !NBOND: bonds
+         1         2         2         3
+
+         1 !NTHETA: angles
+         1         2         3
+
+         0 !NPHI: dihedrals
+
+
+         0 !NIMPHI: impropers
+
+
+         0 !NDON: donors
+
+
+         0 !NACC: acceptors
+
+
+         0 !NNB
+
+         0         0         0
+
+         1         0 !NGRP NST2
+         0         1         0
+
+         1 !MOLNT
+         1         1         1
+
+         0         0 !NUMLP NUMLPH
+
+         0 !NCRTERM: cross-terms
+

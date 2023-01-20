@@ -1,0 +1,34 @@
+*Topology file
+*
+35  1  ! get rid of warning...
+
+MASS   1     N=    14.0067
+MASS   2    =N=    14.0067
+MASS   3     O=    15.9994
+MASS 400 HGTIP3    1.007940      ! polar H, TIPS3P WATER HYDROGEN
+MASS 401 OGTIP3    15.99940     ! TIPS3P WATER OXYGEN
+MASS 190    SOD    22.989770  NA! Sodium Ion
+
+
+RESI N2O         0.00000 
+GROUP   
+ATOM N1   N=    -0.34000 ! https://doi.org/10.1016/j.fluid.2012.03.011
+ATOM N2   =N=    0.68000
+ATOM O3   O=    -0.34000
+BOND N1 N2 N2 O3
+ANGLE N1 N2 O3
+
+RESI SOD       1.00 ! Sodium Ion
+GROUP   
+ATOM SOD  SOD  1.00
+PATCHING FIRST NONE LAST NONE   
+
+RESI TIP3          0.00  ! tip3p water model, generate using noangle nodihedral
+GROUP
+ATOM OH2  OGTIP3  -0.834
+ATOM H1   HGTIP3   0.417
+ATOM H2   HGTIP3   0.417
+BOND OH2 H1 OH2 H2 H1 H2  ! the last bond is needed for shake
+ANGLE H1 OH2 H2           ! required
+ACCEPTOR OH2
+PATCHING FIRST NONE LAST NONE   !It means no patch is defined
