@@ -5,7 +5,7 @@ a single N2O molecule in SF6 or xenon solvent at difference solvent
 densities and model simulation at specific initial conditions for 
 a single N2O molecule in gas phase.
 
-## N2O_SF6_Xe
+## Requirments
 
 - CHARMM c47a2 or higher with compiled usersb.F90 file in the 'charmm' directory
 - packmol
