@@ -1,0 +1,4 @@
+TITLE    Xe atom
+REMARK   single Xe atom for packmol 
+ATOM      1  Xe   XE      1       0.000   0.000   0.000  1.00  0.00      XE     
+END

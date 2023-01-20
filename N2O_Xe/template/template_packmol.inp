@@ -1,0 +1,13 @@
+tolerance 2.0
+output FFF
+seed DDD
+filetype pdb
+structure SSS/n2o.pdb      
+  number NNN1
+  inside box RRR1
+end structure
+structure SSS/SLV.pdb      
+  number NNN2
+  inside box RRR2 
+end structure
+
