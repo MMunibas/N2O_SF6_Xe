@@ -1,0 +1,18 @@
+*Topology file
+*
+35  1  ! get rid of warning...
+
+MASS   1     N=    14.0067
+MASS   2    =N=    14.0067
+MASS   3     O=    15.9994
+
+RESI N2O         0.00000 
+GROUP   
+ATOM N1   N=    -0.08776 !NBO Gaussian charge
+ATOM N2   =N=    0.50757
+ATOM O3   O=    -0.41981
+BOND N1 N2 N2 O3
+ANGLE N1 N2 O3
+PATCHING FIRST NONE LAST NONE   !It means no patch is defined
+
+END

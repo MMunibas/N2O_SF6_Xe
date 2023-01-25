@@ -1,0 +1,47 @@
+*>>>>>>>>>>>> Combined Parameter File for Proteins <<<<<<<<<<<<<
+*>>>>>>>>>>>>>>>>>>>> and Nucleic Acids <<<<<<<<<<<<<<<<<<<<<<<<
+*>>>>>>>>>>>>>>>>> Using All Hydrogens (ALLH) <<<<<<<<<<<<<<<<<<
+*>>>>>>>>>>>>>>>>>>>>> January 1996 <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*>>>>>>> Direct comments to Alexander D. MacKerell Jr. <<<<<<<<<
+*>>>>>> 410 -706 -7442 or email: alex,mmiris.ab.umd.edu  <<<<<<<<<
+* These files are a beta release; additional parameter development
+* and testing may lead to alteration of the contents.
+*
+
+ATOMS
+MASS   1     N=    14.0067
+MASS   2    =N=    14.0067
+MASS   3     O=    15.9994
+
+BONDS
+!
+!V(bond) = Kb(b  - b0)**2
+!
+!Kb: kcal/mole/A**2
+!b0: A
+!
+!atom type Kb          b0
+!
+
+N=   =N=     0.000     1.1282      ! 10.1016/j.fluid.2007.07.014
+O=   =N=     0.000     1.1842
+
+ANGLES
+N= =N= O=     0.000   180.00 !
+
+NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch  -
+cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
+!EWALD PMEWald KAPPa 0.34 ORDEr 6 -
+!FFTX intboxvx FFTY intboxvy FFTZ intboxvz -
+!CTOFNB 12.0 CUTNB 13.0 QCOR 0.05
+
+!adm jr., 5/08/91, suggested cutoff scheme
+N=       0.0       -0.15521    1.7488 ! 10.1016/j.fluid.2012.03.011 
+=N=      0.0       -0.06885    1.6427 !
+O=       0.0       -0.12094    1.7084 ! 
+
+HBOND CUTHB 0.5  ! If you want to do hbond analysis (only), then use
+                 ! READ PARAM APPEND CARD
+                 ! to append hbond parameters from the file: par_hbond.inp
+
+END

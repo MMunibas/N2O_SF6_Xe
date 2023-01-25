@@ -1,0 +1,14 @@
+REMARK  N2O - SF6 PAIR                                                                
+REMARK   DATE:    11/14/22     18:17: 2      CREATED BY USER: toepfer                 
+ATOM      1  N1  N2O     1       0.000   0.000  -1.194  1.00  0.00      SYS 
+ATOM      2  N2  N2O     1       0.000   0.000  -0.075  1.00  0.00      SYS 
+ATOM      3  O3  N2O     1       0.000   0.000   1.111  1.00  0.00      SYS 
+ATOM      4  S   SF6     2       3.250   0.000  -5.629  1.00  0.00      SYS 
+ATOM      5  F1  SF6     2       4.032   1.107  -6.412  1.00  0.00      SYS 
+ATOM      6  F2  SF6     2       2.467  -1.107  -4.847  1.00  0.00      SYS 
+ATOM      7  F3  SF6     2       2.467   1.107  -4.847  1.00  0.00      SYS 
+ATOM      8  F4  SF6     2       4.032  -1.107  -6.412  1.00  0.00      SYS 
+ATOM      9  F5  SF6     2       4.357   0.000  -4.523  1.00  0.00      SYS 
+ATOM     10  F6  SF6     2       2.143   0.000  -6.736  1.00  0.00      SYS 
+TER      11      SF6      2
+END

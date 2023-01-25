@@ -1,0 +1,10 @@
+TITLE    SF6 molecule
+REMARK   single SF6 molecule for packmol 
+ATOM      1  S   SF6     1       0.000   0.000   0.000  1.00  0.00      SF6     
+ATOM      2  F1  SF6     1       1.565   0.000   0.000  1.00  0.00      SF6     
+ATOM      3  F2  SF6     1      -1.565   0.000   0.000  1.00  0.00      SF6     
+ATOM      4  F3  SF6     1       0.000   1.565   0.000  1.00  0.00      SF6     
+ATOM      5  F4  SF6     1       0.000  -1.565   0.000  1.00  0.00      SF6     
+ATOM      6  F5  SF6     1       0.000   0.000   1.565  1.00  0.00      SF6     
+ATOM      7  F6  SF6     1       0.000   0.000  -1.565  1.00  0.00      SF6     
+END

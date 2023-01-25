@@ -1,0 +1,77 @@
+* additional parameters for heme
+*
+
+ATOMS
+MASS   900 SSF6   32.00000 S ! S in SF6
+MASS   901 FSF6   19.00000 F ! F in SF6
+
+BONDS
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2
+!b0: A
+!
+!atom type Kb          b0
+!
+SSF6 FSF6  165.746     1.565    ! 693.48 kJ/mol/A**2
+
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+FSF6 SSF6 FSF6     73.461    90.0   ! 307.36 kJ/mol/rad**2
+
+
+DIHEDRALS
+!
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+!atom types             Kchi    n   delta
+!
+!FSF6  SSF6 FSF6 FSF6    1.0000  1    90.00
+
+
+IMPROPER
+!
+!V(improper) = Kpsi(psi - psi0)**2
+!
+!Kpsi: kcal/mole/rad**2
+!psi0: degrees
+!note that the second column of numbers (0) is ignored
+!
+!atom types           Kpsi                   psi0
+!
+!CPB  CPA  NPH  CPA    20.8000         0      0.0000 ! ALLOW HEM
+!                ! Heme (6-liganded): porphyrin macrocycle (KK 05/13/91)
+
+
+
+NONBONDED nbxmod  5 atom cdiel fshift vatom vdistance vfswitch -
+cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
+!adm jr., 5/08/91, suggested cutoff scheme
+!
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!
+!epsilon: kcal/mole, Eps,i,j = sqrt(eps,i * eps,j)
+!Rmin/2: A, Rmin,i,j = Rmin/2,i + Rmin/2,j
+!
+!atom  ignored    epsilon      Rmin/2   ignored   eps,1-4       Rmin/2,1-4
+!
+SSF6    0.000000  -0.325683     1.8218     ! Samios
+FSF6    0.000000  -0.054131     1.6589     ! Samios
+
+end
+
+return

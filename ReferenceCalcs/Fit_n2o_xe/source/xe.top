@@ -1,0 +1,20 @@
+* ---- 
+* Built RTF for mol1.mol2 
+* ---- 
+*
+   22    0
+
+MASS   901 Xe   131.293 ! Xe 
+
+AUTOGENERATE OFF
+DEFA FIRS NONE LAST NONE
+
+RESI XE   0.000 
+GROUP
+ATOM Xe     Xe      0.0000
+PATCHING FIRS NONE LAST NONE
+
+END
+
+
+
