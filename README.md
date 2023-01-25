@@ -11,3 +11,11 @@ a single N2O molecule in gas phase.
 - packmol
 - python 3.8 or higher 
 - MDAnalysis
+
+## Order
+
+First run the MD simulation of N2O in Xe and SF6 as well as the N2O model simulation 
+(see subdirectories).
+After completion, run all the evaluation scripts in the subdirectories in the order
+as described there. 
+Last run the evaluation scripts in the main directory to generate result figures for publication.
